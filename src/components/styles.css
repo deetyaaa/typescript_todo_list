@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+.input {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+    
+}
+
+.input_box {
+    width: 100%;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 15px 20px;
+    border: none;
+    box-shadow: inset 0 0 10px #f8a5c2;
+    background-color: #f6e7ec;
+    outline-color: #e485a5;
+    transition: 0.2s;
+    font-family: "Ubuntu Sans";
+}
+
+.input_box:active {
+    border: none;
+}
+
+.input_submit {
+    position: absolute;
+    width: 55px;
+    height: 40px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 18px;
+    background-color: #f8a5c2;
+    color: #f6e7ec;
+    font-family: "Montserrat";
+    box-shadow: 0 0 8px #f8a5c2;
+    transition: 0.2s all;
+}
+
+.input_submit:hover { 
+    background-color: #e691ae;
+}
+
+.input_submit:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #e691ae;
+}
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.todo_single {
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* flex: 1; */
+    width: 20%;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #f8a5c2;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.todo_single-box {
+    display: flex;
+    
+    flex: 1;
+    /* height: 70%;
+    width: 50%; */
+    border-radius: 50px;
+    font-size: 17px;
+    padding: 0px 10px;
+    border: none;
+    box-shadow: inset 0 0 10px #f8a5c2;
+    background-color: #f6e7ec;
+    outline-color: #e485a5;
+    transition: 0.2s;
+    font-family: "Ubuntu Sans";
+}
+
+.todo_single-text {
+    flex: 1;
+    /* padding: 5px; */
+    font-size: 17px;
+    
+}
+
+.todo_single-container {
+    background-color: #f8a5c2;
+}
+
+.icon_group {
+    /* position: absolute;
+    right:70px; */
+    /* width:50%; */
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+.icon {
+    /* flex: 1; */
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 6px 5px 1px 6px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f6e7ec;
+    background-color: #e691ae;
+    border-radius: 15px;
+}
+
+.icon:hover {
+    background-color: #e485a5;
+}
+
+@media (max-width: 1200px) {
+    .todo_single {
+        width: 40%;
+    }
+}
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }
+    .todos {
+        width: 95%;
+    }
+    .todo_single {
+        width: 100%;
+    }
+}
+
+/* if the "post-it" becomes vertical, sort the icons by column not row */
