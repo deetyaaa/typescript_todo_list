@@ -42,7 +42,7 @@ const TodoItem: React.FC<Props> = ({ todo, todos, setTodos }: Props) => {
 
     return (
         <form className='todo_single' onSubmit={(e) => handleEdit(e, todo.id)}>
-            {/* <div className='todo_single-container'> */}
+            <div className='todo_single-container'>
                 {edit ? (
                     <input 
                         className='todo_single-box' 
@@ -75,7 +75,7 @@ const TodoItem: React.FC<Props> = ({ todo, todos, setTodos }: Props) => {
                         <FaCheck />
                     </span>
                 </div>
-            {/* </div> */}
+            </div>
         </form>
     );
 }
