@@ -4,6 +4,7 @@ import './App.css';
 import InputField from './components/InputField';
 import { Todo } from './model';
 import TodoList from './components/TodoList';
+import { motion } from "framer-motion";
 
 const App: React.FC = () => {
 
@@ -26,7 +27,11 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <span className="heading">be productive</span>
+      <motion.span className="heading"
+        whileHover={{scale: 1.05}}
+        initial={{}}
+        animate={{}}
+      >be productive</motion.span>
 
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
       <TodoList todos={todos} setTodos={setTodos}></TodoList>

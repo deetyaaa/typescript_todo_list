@@ -2,7 +2,7 @@ import React from 'react';
 import "./styles.css";
 import { Todo } from '../model';
 import TodoItem from './TodoItem';
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface Props {
     todos: Todo[];

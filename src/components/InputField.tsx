@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import "./styles.css"
+import { motion } from "framer-motion"
 
 interface Props{
     todo:string;
@@ -26,7 +27,9 @@ const InputField:React.FC<Props> = ({todo, setTodo, handleAdd}: Props) => { // c
                 (e)=>setTodo(e.target.value)
             }
         />
-        <button className='input_submit' type='submit'>go</button>
+        <motion.button className='input_submit' whileHover={{scale: 1.05}} type='submit'>
+            go
+        </motion.button>
     </form>
   );
 }
