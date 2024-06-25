@@ -58,7 +58,9 @@
     flex-wrap: wrap;
 }
 
-.container {}
+.container {
+    
+}
 
 .todo_single {
     display: flex;
